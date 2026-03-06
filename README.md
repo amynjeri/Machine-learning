@@ -1,6 +1,6 @@
 # Toxicity data classification using ML
 # Project overview
-This repository contains a Jupyter Notebook that builds a machine learning model to predict whether a chemical compound is Toxic or NonToxic based on a large set of molecular descriptors.
+This repository contains a Jupyter Notebook that builds a machine learning model to predict whether a chemical compound is Toxic or Non Toxic based on a large set of molecular descriptors.
 The goal is to show a workflow that has:
 
   -Data preprocessing 
@@ -20,7 +20,7 @@ The dataset (toxicity dataset.csv) contains 171 rows and 1203 columns.
 
 Target distribution:
 
-NonToxic: 115 (67.3%)
+Non Toxic: 115 (67.3%)
 
 Toxic: 56 (32.7%)
 
@@ -36,7 +36,7 @@ Feature scaling with StandardScaler.
 
 Highly correlated features removed (Pearson correlation > 0.9) to reduce multicollinearity.
 
-3. Feature selection
+2. Feature selection
 
 A Random Forest model was used to calculate feature importance scores.
 Features with importance values below 0.001 were removed.
@@ -49,7 +49,7 @@ Features-50
 
 This step reduces noise and keeps only the most predictive variables.
 
-4.Model Training
+3. Model Training
 
 The final model used is a Random Forest classifier.
 
@@ -63,7 +63,7 @@ Why Random Forest?
 
 Model performance was performed using cross-validation.
 
-5. Model evaluation
+4. Model evaluation
 
 The following metrics were used:
 
@@ -84,7 +84,7 @@ Overall Accuracy: 0.63
 
 ROC-AUC: 0.659
 
-6.Results Interpretation
+5. Results Interpretation
 
 The model performs well in identifying Non-Toxic samples, but struggles more with detecting Toxic samples.This happens because:
 
@@ -96,7 +96,7 @@ The model performs well in identifying Non-Toxic samples, but struggles more wit
 
 Despite these limitations, the model achieves a moderate ROC-AUC score (~0.66), indicating it still captures useful predictive patterns.
 
-7.Technologies used
+6. Technologies used
 
 Jupyter notebook
 
@@ -112,7 +112,7 @@ NumPy
 
 Scikit-learn
 
-8. To run the project:
+7. To run the project:
    
 -Clone the repository:
 
@@ -141,7 +141,7 @@ toxicity-prediction
 ├── README.md
 └── requirements.txt
 
- 9.Key Outcomes
+ 8.Key Outcomes
  
 This project demonstrates:
 
