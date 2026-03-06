@@ -112,34 +112,23 @@ NumPy
 
 Scikit-learn
 
-7. To run the project:
-   
--Clone the repository:
+7. To run the project
+
+Clone the repository:
 
 git clone https://github.com/yourusername/toxicity-prediction.git
 
--Navigate into the project directory:
+Navigate into the project directory:
 
 cd toxicity-prediction
 
--Install required dependencies:
+Install required dependencies:
 
 pip install pandas numpy scikit-learn matplotlib seaborn
 
--Run the notebook:
+Run the notebook:
 
 jupyter notebook
-Project Structure
-toxicity-prediction
-│
-├── data
-│   └── dataset.csv
-│
-├── notebooks
-│   └── toxicity_model.ipynb
-│
-├── README.md
-└── requirements.txt
 
  8.Key Outcomes
  
