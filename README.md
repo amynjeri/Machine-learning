@@ -10,6 +10,7 @@ The goal is to show a workflow that has:
   -Decision threshold tuning to improve minority class recall
 # Dataset
 The dataset (toxicity dataset.csv) contains 171 rows and 1203 columns.
+
 Target distribution:
 
 NonToxic: 115 (67.3%)
@@ -18,9 +19,13 @@ Toxic: 56 (32.7%)
 No missing values were detected.
 # Methodology
 1. Preprocessing
+
 Constant features removed (VarianceThreshold(threshold=0).
+
 Low‑variance features removed (threshold=0.00001).
+
 Feature scaling with StandardScaler.
+
 Highly correlated features removed (Pearson correlation > 0.9) to reduce multicollinearity.
 
 3. Feature selection
