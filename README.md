@@ -21,6 +21,7 @@ The dataset (toxicity dataset.csv) contains 171 rows and 1203 columns.
 Target distribution:
 
 NonToxic: 115 (67.3%)
+
 Toxic: 56 (32.7%)
 
 No missing values were detected.
