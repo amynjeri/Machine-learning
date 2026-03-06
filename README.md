@@ -26,7 +26,7 @@ Toxic: 56 (32.7%)
 
 No missing values were detected.
 # Methodology
-1. Preprocessing
+# 1. Preprocessing
 
 Constant features removed (VarianceThreshold(threshold=0).
 
@@ -36,7 +36,7 @@ Feature scaling with StandardScaler.
 
 Highly correlated features removed (Pearson correlation > 0.9) to reduce multicollinearity.
 
-2. Feature selection
+# 2. Feature selection
 
 A Random Forest model was used to calculate feature importance scores.
 Features with importance values below 0.001 were removed.
@@ -49,7 +49,7 @@ Features-50
 
 This step reduces noise and keeps only the most predictive variables.
 
-3. Model Training
+# 3. Model Training
 
 The final model used is a Random Forest classifier.
 
@@ -63,7 +63,7 @@ Why Random Forest?
 
 Model performance was performed using cross-validation.
 
-4. Model evaluation
+# 4. Model evaluation
 
 The following metrics were used:
 
@@ -84,7 +84,7 @@ Overall Accuracy: 0.63
 
 ROC-AUC: 0.659
 
-5. Results Interpretation
+# 5. Results Interpretation
 
 The model performs well in identifying Non-Toxic samples, but struggles more with detecting Toxic samples.This happens because:
 
@@ -96,7 +96,7 @@ The model performs well in identifying Non-Toxic samples, but struggles more wit
 
 Despite these limitations, the model achieves a moderate ROC-AUC score (~0.66), indicating it still captures useful predictive patterns.
 
-6. Technologies used
+# Technologies used
 
 Jupyter notebook
 
@@ -112,7 +112,7 @@ NumPy
 
 Scikit-learn
 
-7. To run the project
+# To run the project
 
 Clone the repository:
 
@@ -130,7 +130,7 @@ Run the notebook:
 
 jupyter notebook
 
- 8.Key Outcomes
+ # Key Outcomes
  
 This project demonstrates:
 
